@@ -1,15 +1,20 @@
-// Contatore 1/100
-for (var i = 1; i <= 50; i++) {
+for (var i = 1; i <= 100; i++) {
+  var numeri = i;
+  // variabile contatore
 
-  if (i % 3 == 1 && i % 5 == 1){
-    console.log("FizzBuzz");
+  // modifiche valori du numeri multipli 3/5
+  if (numeri % 3 == 0 && numeri % 5 == 0){
+    numeri = "FizzBuzz";
   }
-  else if( i % 3 == 1 ){
-  console.log("Fizz");
+  else if( numeri % 3 == 0 ){
+  numeri = ("Fizz");
   }
-  else if ( i % 5 == 1 ){
-    console.log("Buzz");
+  else if ( numeri % 5 == 0 ){
+    numeri = ("Buzz");
   }
-  console.log(i);
+  // modifiche valori du numeri multipli 3/5
+
+  // Stampa variabile e incremento valore
+  document.getElementById("testo").innerHTML += numeri  + "<br>";
+  console.log(numeri);
 }
-// /Programma che scriva i numeri 1/100
